@@ -1,0 +1,1 @@
+v0.2 is a preference-derived SFT adapter trained on the chosen side of a DPO-style preference dataset. True DPO was attempted, but the free Colab T4 gpt-oss + Unsloth + TRL stack hit a dtype incompatibility during training. True DPO/ORPO/GRPO remains a planned v0.3 upgrade.
