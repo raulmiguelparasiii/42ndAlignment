@@ -25,3 +25,28 @@ Use Google Colab with T4 GPU or better.
 ## Important
 
 v0.2 is not true DPO. It is preference-derived SFT using the chosen side of the DPO-style dataset. True DPO was attempted but blocked by a dtype mismatch in the free Colab T4 stack.
+
+
+
+
+# TruthfulQA MC Smoke Test Notebook
+
+This notebook runs a small multiple-choice TruthfulQA-style smoke test comparing:
+
+- base `unsloth/gpt-oss-20b-unsloth-bnb-4bit`
+- `42ndAlignment v0.2` LoRA adapter
+
+It uses a prompted multiple-choice format and parses the model's selected letter.
+
+This is not an official leaderboard result. It is a fast, reproducible local comparison for early validation.
+
+Recommended first run:
+
+```text
+N = 20
+reasoning_effort = low
+max_new_tokens = 32
+do_sample = False
+```
+
+If the smoke test works, increase `N` to 50 or 100.
