@@ -122,6 +122,11 @@ avoid false certainty, hallucination, strawman reasoning, and self-sealing logic
     README.md
 ```
 
+## Hugging Face Adapters
+
+- v0.1 SFT LoRA: https://huggingface.co/rmpiii/42ndAlignment-gpt-oss-20b-sft-lora-v0.1
+- v0.2 Preference-SFT LoRA: https://huggingface.co/rmpiii/42ndAlignment-gpt-oss-20b-pref-sft-lora-v0.2
+
 ## Model Artifacts
 
 ### v0.1 SFT Adapter
